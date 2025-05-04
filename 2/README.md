@@ -58,9 +58,11 @@ console.log(img.alt); // "Logo" (forma directa)
 img.setAttribute("src", "nuevo-logo.png");
 img.alt = "Nuevo logo";
 ```
+
 # ✅ Mini-ejemplo completo:
 
 * index.html:
+
 ```sh
 <p id="mensaje">Hola</p> <a id="enlace" href="https://google.com">Ir a Google</a>
 script.js:
@@ -71,6 +73,7 @@ const enlace = document.getElementById("enlace");
 enlace.setAttribute("href", "https://openai.com");
 enlace.textContent = "Ir a OpenAI";
 ```
+
 # 🧠 Resumen rápido:
 
 * textContent → solo texto plano
@@ -79,7 +82,8 @@ enlace.textContent = "Ir a OpenAI";
 
 * getAttribute / setAttribute → para atributos como href, src, alt, etc.
 
-# 🛠️ Ejercicios Día 2:
+
+### 🛠️ Ejercicios Día 2:
 
 - Crea un párrafo con id="info" que diga "Cargando..."
 
