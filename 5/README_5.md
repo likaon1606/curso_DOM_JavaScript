@@ -26,75 +26,86 @@
 - Crea un nuevo elemento HTML.
 ```sh
 const img = document.createElement('img');
+
 img.src = 'foto1.jpg';
 img.alt = 'Descripción';
 ```
-document.createTextNode(texto)
-Crea un nodo de texto independiente.
 
+- * `document.createTextNode(texto)`
+- Crea un nodo de texto independiente.
+```sh
 const texto = document.createTextNode('¡Hola, mundo!');
 const p = document.createElement('p');
 p.appendChild(texto);
+```
 
-parent.appendChild(hijo)
-Inserta el nodo hijo al final de parent.
+- * `parent.appendChild(hijo)`
+- Inserta el nodo hijo al final de parent.
+```sh
 const galeria = document.getElementById('galeria');
 galeria.appendChild(img);
+```
 
-parent.insertBefore(nuevo, referencia)
-Inserta nuevo justo antes de referencia.
+- * `parent.insertBefore(nuevo, referencia)`
+- Inserta nuevo justo antes de referencia.
+```sh
 const primerImg = galeria.querySelector('img');
 const segundaImg = document.createElement('img');
 segundaImg.src = 'foto2.jpg';
 galeria.insertBefore(segundaImg, primerImg);
+```
 
-parent.replaceChild(nuevo, viejo)
-Reemplaza el nodo viejo por nuevo.
+- * `parent.replaceChild(nuevo, viejo)`
+- Reemplaza el nodo viejo por nuevo.
+```sh
 const nuevaFoto = document.createElement('img');
 nuevaFoto.src = 'foto3.jpg';
 galeria.replaceChild(nuevaFoto, primerImg);
+```
 
-node.removeChild(hijo)
-Elimina hijo de su contenedor.
-galeria.removeChild(segundaImg);
+- * `node.removeChild(hijo)`
+- Elimina hijo de su contenedor.
+`galeria.removeChild(segundaImg);`
 
-node.remove()
-Elimina directamente el nodo del DOM.
-nuevaFoto.remove();
+- * `node.remove()`
+- Elimina directamente el nodo del DOM.
+`nuevaFoto.remove();`
 
-node.cloneNode(deep)
-Clona un nodo. Si deep es true, copia también sus hijos.
+- * `node.cloneNode(deep)`
+- Clona un nodo. Si deep es true, copia también sus hijos.
+```sh
 const clon = img.cloneNode(true);
 galeria.appendChild(clon);
+```
 
-🛠️ Ejercicios
-Crear y agregar
+## 🛠️ Ejercicios
+- * Crear y agregar:
 
-Crea un <div> con clase .tarjeta.
+- Crea un <div> con clase .tarjeta.
 
-Dentro de .tarjeta, crea un <h2> con texto “Título” y un <p> con texto “Descripción”.
+- Dentro de .tarjeta, crea un <h2> con texto “Título” y un <p> con texto “Descripción”.
 
-Agrégalo al elemento #galeria con appendChild.
+- Agrégalo al elemento `#galeria` con `appendChild`.
 
-Insertar antes
+- Insertar antes
 
-Crea un nuevo <p> que diga “Inicio de galería”.
+- Crea un nuevo <p> que diga “Inicio de galería”.
 
-Insértalo antes del primer hijo de #galeria usando insertBefore.
+- Insértalo antes del primer hijo de `#galeria` usando `insertBefore`.
 
-Reemplazar
+- Reemplazar
 
-Toma la primera .tarjeta que creaste y reemplázala por otra tarjeta distinta (cambia título y descripción) usando replaceChild.
+- Toma la primera .tarjeta que creaste y reemplázala por otra tarjeta distinta (cambia título y descripción) usando `replaceChild`.
 
-Eliminar nodos
+- * Eliminar nodos
 
-Borra la última tarjeta creada con removeChild.
+- Borra la última tarjeta creada con `removeChild`.
 
-Luego clona la tarjeta restante y pégala al final con cloneNode(true).
+- Luego clona la tarjeta restante y pégala al final con `cloneNode(true)`.
 
-Crear con TextNode
+- Crear con TextNode
 
-Crea un botón que, al hacer clic, añada un <li> a una lista nueva <ul id="lista"></ul>.
+- Crea un botón que, al hacer clic, añada un <li> a una lista nueva <ul id="lista"></ul>.
 
-El <li> debe generarse con createElement + createTextNode.
+- El <li> debe generarse con `createElement + createTextNode`.
 
