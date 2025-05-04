@@ -85,7 +85,7 @@ enlace.textContent = "Ir a OpenAI";
 
 ### 🛠️ Ejercicios Día 2:
 
-- Crea un párrafo con id="info" que diga "Cargando..."
+- Crea un párrafo con `id="info" que diga "Cargando..."`
 
 - Crea un botón con id="btnCambiar"
 
