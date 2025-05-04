@@ -22,13 +22,13 @@
 
 ## 📜 Métodos y ejemplos
 
-- * document.createElement(tagName)
-* - Crea un nuevo elemento HTML.
-
+- * `document.createElement(tagName)`
+- Crea un nuevo elemento HTML.
+```sh
 const img = document.createElement('img');
 img.src = 'foto1.jpg';
 img.alt = 'Descripción';
-
+```
 document.createTextNode(texto)
 Crea un nodo de texto independiente.
 
