@@ -23,7 +23,7 @@
 ## 📜 Métodos y ejemplos
 
 - * document.createElement(tagName)
-* Crea un nuevo elemento HTML.
+* - Crea un nuevo elemento HTML.
 
 const img = document.createElement('img');
 img.src = 'foto1.jpg';
