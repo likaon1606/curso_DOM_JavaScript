@@ -87,14 +87,14 @@ enlace.textContent = "Ir a OpenAI";
 
 - Crea un párrafo con `id="info" que diga "Cargando..."`
 
-- Crea un botón con id="btnCambiar"
+- Crea un botón con `id="btnCambiar"`
 
 - Cuando le des click al botón:
 
-- Cambia el contenido del párrafo a "Contenido cargado"
+- Cambia el contenido del párrafo a `"Contenido cargado"`
 
-- Cambia el texto del botón a "Ya cambió"
+- Cambia el texto del botón a `"Ya cambió"`
 
-- Crea una imagen con id="logo" y src="imagen1.jpg"
+- Crea una imagen con `id="logo" y src="imagen1.jpg"`
 
-- Al hacer click en otro botón, cambia su src a "imagen2.jpg"
+- Al hacer click en otro botón, cambia su `src a "imagen2.jpg"`

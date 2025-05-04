@@ -56,13 +56,13 @@ document.getElementsByTagName(tagName)
 
 * 🧠 ¿Qué devuelve cada uno?
 
-- getElementById → un solo elemento (o null si no existe)
+- `getElementById` → un solo elemento (o null si no existe)
 
-- getElementsByClassName → HTMLCollection (array-like)
+- `getElementsByClassName` → HTMLCollection (array-like)
 
-- querySelector → primer elemento que coincida
+- `querySelector` → primer elemento que coincida
 
-- querySelectorAll → NodeList (puede usarse con forEach)
+- `querySelectorAll` → NodeList (puede usarse con forEach)
 
 
 ### 🛠️ Ejercicios Día 1
@@ -71,12 +71,12 @@ document.getElementsByTagName(tagName)
 
 - En JS:
 
-- Usa getElementById para seleccionar un párrafo y mostrarlo por consola.
+- Usa `getElementById` para seleccionar un párrafo y mostrarlo por consola.
 
-- Usa getElementsByClassName para mostrar todos los párrafos.
+- Usa `getElementsByClassName` para mostrar todos los párrafos.
 
-- Usa querySelector para seleccionar el primer botón.
+- Usa `querySelector` para seleccionar el primer botón.
 
-- Usa querySelectorAll para seleccionar todos los botones.
+- Usa `querySelectorAll` para seleccionar todos los botones.
 
 - Imprime los resultados en consola.
