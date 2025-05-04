@@ -5,15 +5,15 @@
 
 # 🧠 Conceptos clave de hoy:
 
-- element.style.propiedad → modifica estilos en línea.
+- `element.style.propiedad` → modifica estilos en línea.
 
-- element.classList.add() → añade una clase.
+- `element.classList.add()` → añade una clase.
 
-- element.classList.remove() → elimina una clase.
+- `element.classList.remove()` → elimina una clase.
 
-- element.classList.toggle() → agrega o quita una clase dependiendo si ya está presente.
+- `element.classList.toggle()` → agrega o quita una clase dependiendo de si ya está presente.
 
-- element.classList.contains() → verifica si el elemento tiene esa clase.
+- `element.classList.contains()` → verifica si el elemento tiene esa clase.
 
 # 🧪 Ejemplo con explicación:
 
@@ -24,7 +24,7 @@
 <button id="btnEstilo">Cambiar estilo</button>
 ```
 
-CSS:
+* CSS:
 
 ```sh
 .destacado {
@@ -35,7 +35,7 @@ CSS:
 }
 ```
 
-JS:
+* JS:
 
 ```sh
 const parrafo = document.getElementById('miParrafo');
@@ -52,12 +52,12 @@ Cada vez que haces clic en el botón, se alterna la clase destacado. Si la tiene
 
 # 📚 Ejercicios de hoy:
 
-- Crea un párrafo y un botón que cambie su color de fondo a amarillo usando style.backgroundColor.
+- Crea un párrafo y un botón que cambie su color de fondo a amarillo usando `style.backgroundColor`.
 
-- Crea un div con una clase "oculto" que tenga display: none. Agrega un botón que quite esa clase al hacer clic.
+- Crea un `div` con una clase "oculto" que tenga `display: none`. Agrega un botón que quite esa clase al hacer clic.
 
-- Haz un botón que alterne entre dos clases diferentes en un mismo div (por ejemplo .rojo y .azul).
+- Haz un botón que alterne entre dos clases diferentes en un mismo `div (por ejemplo .rojo y .azul)`.
 
-- Usa classList.contains para verificar si un elemento tiene una clase y muestra el resultado en consola.
+- Usa `classList.contains` para verificar si un elemento tiene una clase y muestra el resultado en consola.
 
-* 📌 Tip extra: puedes definir las clases en tu archivo CSS y activarlas con classList en JS.
+* 📌 Tip extra: puedes definir las clases en tu archivo `CSS` y activarlas con `classList en JS`.

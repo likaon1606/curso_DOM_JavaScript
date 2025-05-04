@@ -1,0 +1,16 @@
+.oculto {
+  display: none;
+  background: orange;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.rojo {
+  background: red;
+}
+
+.azul {
+  background: blue;
+}
