@@ -4,7 +4,7 @@
 
 * Los eventos permiten ejecutar código cuando el usuario interactúa con elementos del DOM. Lo más común: hacer clic, pasar el mouse, escribir algo, mover el cursor, etc.
 
-* 📌 Cómo se usan:
+### 📌 Cómo se usan:
 
 - `element.addEventListener(tipoDeEvento, función)`
 - Esto “escucha” cuando ocurre un evento y ejecuta una función.
