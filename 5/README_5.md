@@ -81,15 +81,15 @@ galeria.appendChild(clon);
 ## 🛠️ Ejercicios
 - * Crear y agregar:
 
-- Crea un <div> con clase .tarjeta.
+- Crea un `<div>` con clase .tarjeta.
 
-- Dentro de .tarjeta, crea un <h2> con texto “Título” y un <p> con texto “Descripción”.
+- Dentro de .tarjeta, crea un `<h2>` con texto “Título” y un `<p>` con texto “Descripción”.
 
 - Agrégalo al elemento `#galeria` con `appendChild`.
 
 - Insertar antes
 
-- Crea un nuevo <p> que diga “Inicio de galería”.
+- Crea un nuevo `<p>` que diga “Inicio de galería”.
 
 - Insértalo antes del primer hijo de `#galeria` usando `insertBefore`.
 
@@ -105,7 +105,7 @@ galeria.appendChild(clon);
 
 - Crear con TextNode
 
-- Crea un botón que, al hacer clic, añada un <li> a una lista nueva <ul id="lista"></ul>.
+- Crea un botón que, al hacer clic, añada un `<li>` a una lista nueva `<ul id="lista"></ul>`.
 
-- El <li> debe generarse con `createElement + createTextNode`.
+- El `<li>` debe generarse con `createElement + createTextNode`.
 
