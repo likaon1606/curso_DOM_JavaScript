@@ -1,9 +1,9 @@
 # Día 2 – Manipulación de contenido y atributos
 
-# 🎯 Objetivo del día:
+## 🎯 Objetivo del día:
 Aprenderás a modificar el contenido de los elementos (texto o HTML) y a leer o cambiar sus atributos como href, src, id, etc.
 
-# 📚 Parte 1: Modificar contenido
+## 📚 Parte 1: Modificar contenido
 
 * textContent
 - Modifica el texto de un elemento, sin interpretar etiquetas HTML.
@@ -31,7 +31,7 @@ js:
 console.log(p.innerText); // muestra solo texto visible
 ```
 
-# 📚 Parte 2: Modificar atributos
+## 📚 Parte 2: Modificar atributos
 
 * Usamos los siguientes métodos:
 
@@ -59,7 +59,7 @@ img.setAttribute("src", "nuevo-logo.png");
 img.alt = "Nuevo logo";
 ```
 
-# ✅ Mini-ejemplo completo:
+## ✅ Mini-ejemplo completo:
 
 * index.html:
 
@@ -74,7 +74,7 @@ enlace.setAttribute("href", "https://openai.com");
 enlace.textContent = "Ir a OpenAI";
 ```
 
-# 🧠 Resumen rápido:
+## 🧠 Resumen rápido:
 
 * textContent → solo texto plano
 
@@ -83,7 +83,7 @@ enlace.textContent = "Ir a OpenAI";
 * getAttribute / setAttribute → para atributos como href, src, alt, etc.
 
 
-### 🛠️ Ejercicios Día 2:
+## 🛠️ Ejercicios Día 2:
 
 - Crea un párrafo con `id="info" que diga "Cargando..."`
 

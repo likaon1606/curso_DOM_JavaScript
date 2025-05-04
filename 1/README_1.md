@@ -1,8 +1,8 @@
-### Día 1 – Introducción al DOM y selección de elementos
+# Día 1 – Introducción al DOM y selección de elementos
 
-# 🎯 Objetivo: Aprender a seleccionar elementos del DOM usando diferentes métodos.
+## 🎯 Objetivo: Aprender a seleccionar elementos del DOM usando diferentes métodos.
 
-# 📚 ¿Qué es el DOM?
+## 📚 ¿Qué es el DOM?
 
 * DOM significa Document Object Model. Es una representación en memoria del documento HTML. JavaScript puede usarlo para:
 
@@ -14,7 +14,7 @@
 
 - Responder a eventos del usuario
 
-# 🧠 Métodos de selección de elementos
+## 🧠 Métodos de selección de elementos
 
 ```sh
 document.getElementById(id)
@@ -32,7 +32,7 @@ document.getElementsByClassName(className)
 document.getElementsByTagName(tagName)
  Selecciona todos los elementos con esa etiqueta (HTMLCollection).
 ```
-# ✅ Ejemplo completo:
+## ✅ Ejemplo completo:
 
 * index.html:
 <!-- 
@@ -65,7 +65,7 @@ document.getElementsByTagName(tagName)
 - `querySelectorAll` → NodeList (puede usarse con forEach)
 
 
-### 🛠️ Ejercicios Día 1
+## 🛠️ Ejercicios Día 1
 
 - Crea un HTML con 2 párrafos y 2 botones (pueden estar vacíos).
 

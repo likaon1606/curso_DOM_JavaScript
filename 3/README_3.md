@@ -1,9 +1,9 @@
-### 📆 Día 3 – Manipulación de Clases y Estilos con JavaScript
+# 📆 Día 3 – Manipulación de Clases y Estilos con JavaScript
 
 * 🔹 Objetivo del día:
 - Aprenderás a modificar los estilos de los elementos HTML directamente con JavaScript y también a agregar, quitar o alternar clases CSS dinámicamente.
 
-# 🧠 Conceptos clave de hoy:
+## 🧠 Conceptos clave de hoy:
 
 - `element.style.propiedad` → modifica estilos en línea.
 
@@ -15,7 +15,7 @@
 
 - `element.classList.contains()` → verifica si el elemento tiene esa clase.
 
-# 🧪 Ejemplo con explicación:
+## 🧪 Ejemplo con explicación:
 
 * HTML:
 
@@ -47,10 +47,10 @@ boton.addEventListener('click', () => {
 ```
 
 
-# 🧠 ¿Qué hace?
+## 🧠 ¿Qué hace?
 Cada vez que haces clic en el botón, se alterna la clase destacado. Si la tiene, se quita. Si no la tiene, se añade. toggle es perfecto para botones de activar/desactivar.
 
-# 📚 Ejercicios de hoy:
+## 📚 Ejercicios de hoy:
 
 - Crea un párrafo y un botón que cambie su color de fondo a amarillo usando `style.backgroundColor`.
 

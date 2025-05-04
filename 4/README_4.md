@@ -1,6 +1,6 @@
-### 📅 Día 4 – Eventos (click, mouseover, input, etc.)
+# 📅 Día 4 – Eventos (click, mouseover, input, etc.)
 
-# 🧠 Conceptos clave de hoy:
+## 🧠 Conceptos clave de hoy:
 
 * Los eventos permiten ejecutar código cuando el usuario interactúa con elementos del DOM. Lo más común: hacer clic, pasar el mouse, escribir algo, mover el cursor, etc.
 
@@ -64,7 +64,7 @@ alert('Formulario enviado');
 
 
 
-# 🧪 Ejercicio práctico:
+## 🧪 Ejercicio práctico:
 
 - Crea un botón que diga “Cambiar color”.
 - Al hacer clic, cambia el fondo del body a otro color.

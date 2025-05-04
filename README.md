@@ -1,4 +1,4 @@
-### MiniCurso de manipulación del DOM con JavaScript
+# MiniCurso de manipulación del DOM con JavaScript
 
 * Cada carpeta de ejercicios contiene un `README` con el Tema, explicación, ejemplos y ejercicios.
 
@@ -10,7 +10,7 @@
  
 * 🛠️ Ejercicios para practicar
  
-# 📅 Plan del curso: Manipulación del DOM con JavaScript (HTML + CSS + JS)
+## 📅 Plan del curso: Manipulación del DOM con JavaScript (HTML + CSS + JS)
 
 - Día 1 – Introducción al DOM y selección de elementos
 - Día 2 – Manipulación de texto y atributos
