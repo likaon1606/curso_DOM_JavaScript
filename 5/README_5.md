@@ -16,13 +16,13 @@
 
 ## 🧪 Ejemplos explicados
 ### Crear un elemento y agregarlo al DOM
-- * 📄 HTML:
+- 📄 HTML:
 ```sh
 <button id="crearTarjeta">Crear Tarjeta</button>
 <div id="contenedorTarjetas"></div>
 ```
 
-- * 📜 JavaScript:
+- 📜 JavaScript:
 ```sh
 const btnCrear = document.getElementById('crearTarjeta');
 const contenedor = document.getElementById('contenedorTarjetas');
@@ -43,7 +43,7 @@ btnCrear.addEventListener('click', () => {
 });
 ```
 
-- * 🎨 CSS opcional para ver mejor la tarjeta:
+- 🎨 CSS opcional para ver mejor la tarjeta:
 ```sh
 .tarjeta {
   background: #f0f0f0;
@@ -61,7 +61,7 @@ btnCrear.addEventListener('click', () => {
 <button id="btnEliminar">Eliminar mensaje</button>
 ```
 
--📜 JavaScript:
+- 📜 JavaScript:
 ```sh
 const mensaje = document.getElementById('mensaje');
 const btnEliminar = document.getElementById('btnEliminar');
@@ -80,7 +80,7 @@ btnEliminar.addEventListener('click', () => {
 <ul id="listaTareas"></ul>
 ```
 
-* - 📜 Objetivo:
++ 📜 Objetivo:
 
 - Al hacer clic en "Agregar Tarea":
 
