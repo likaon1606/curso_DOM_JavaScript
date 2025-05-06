@@ -80,15 +80,15 @@ btnEliminar.addEventListener('click', () => {
 <ul id="listaTareas"></ul>
 ```
 
-- * 📜 Objetivo:
+- 📜 Objetivo:
 
-- Al hacer clic en "Agregar Tarea":
+* Al hacer clic en "Agregar Tarea":
 
-- Crear un <li> con el texto del input.
+* Crear un <li> con el texto del input.
 
-- Insertarlo en #listaTareas.
+* Insertarlo en #listaTareas.
 
-- Vaciar el input.
+* Vaciar el input.
 
 ---------------------------------------------------
 
