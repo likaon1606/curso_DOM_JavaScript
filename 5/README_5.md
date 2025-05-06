@@ -14,9 +14,9 @@
 
 - Usar botones y eventos para realizar estas acciones.
 
-## 🧪 Ejemplos explicados
-### Crear un elemento y agregarlo al DOM
-- 📄 HTML:
+# 🧪 Ejemplos explicados
+## Crear un elemento y agregarlo al DOM
+#### 📄 HTML:
 ```sh
 <button id="crearTarjeta">Crear Tarjeta</button>
 <div id="contenedorTarjetas"></div>
@@ -80,7 +80,7 @@ btnEliminar.addEventListener('click', () => {
 <ul id="listaTareas"></ul>
 ```
 
-##### 📜 Objetivo:
+### 📜 Objetivo:
 
 - Al hacer clic en "Agregar Tarea":
 
