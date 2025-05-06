@@ -80,7 +80,7 @@ btnEliminar.addEventListener('click', () => {
 <ul id="listaTareas"></ul>
 ```
 
-+ 📜 Objetivo:
+- * 📜 Objetivo:
 
 - Al hacer clic en "Agregar Tarea":
 
@@ -89,6 +89,8 @@ btnEliminar.addEventListener('click', () => {
 - Insertarlo en #listaTareas.
 
 - Vaciar el input.
+
+------------------------------------------------------
 
 - * 2.- Crear una tarjeta con botón para eliminarse a sí misma
 
