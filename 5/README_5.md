@@ -55,13 +55,13 @@ btnCrear.addEventListener('click', () => {
 ```
 
 ### Eliminar un elemento del DOM
-- * 📄 HTML:
+- 📄 HTML:
 ```sh
 <div id="mensaje">Este mensaje será eliminado</div>
 <button id="btnEliminar">Eliminar mensaje</button>
 ```
 
-- * 📜 JavaScript:
+-📜 JavaScript:
 ```sh
 const mensaje = document.getElementById('mensaje');
 const btnEliminar = document.getElementById('btnEliminar');
@@ -73,14 +73,14 @@ btnEliminar.addEventListener('click', () => {
 # 🧩 Ejercicios prácticos
 - * 1.- Crear una lista de tareas
 
-- * 📄 HTML:
+- 📄 HTML:
 ```sh
 <input type="text" id="tareaInput" placeholder="Escribe una tarea" />
 <button id="agregarTarea">Agregar Tarea</button>
 <ul id="listaTareas"></ul>
 ```
 
-- * 📜 Objetivo:
+* - 📜 Objetivo:
 
 - Al hacer clic en "Agregar Tarea":
 
@@ -92,7 +92,7 @@ btnEliminar.addEventListener('click', () => {
 
 - * 2.- Crear una tarjeta con botón para eliminarse a sí misma
 
-- * 📄 HTML:
+- 📄 HTML:
 ```sh
 <button id="crearAutoTarjeta">Crear Tarjeta con botón</button>
 <div id="zonaTarjetas"></div>
