@@ -1,6 +1,6 @@
 # 📅 Día 5 – Crear y eliminar elementos del DOM
 ## 🧠 Conceptos clave
-- * Hoy aprenderás a:
+#### **Hoy aprenderás a:**
 
 - Crear elementos con document.createElement().
 
