@@ -90,7 +90,7 @@ btnEliminar.addEventListener('click', () => {
 
 - Vaciar el input.
 
-------------------------------------------------------
+--
 
 - * 2.- Crear una tarjeta con botón para eliminarse a sí misma
 
