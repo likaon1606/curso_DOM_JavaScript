@@ -1,6 +1,6 @@
 # 📅 Día 5 – Crear y eliminar elementos del DOM
 ## 🧠 Conceptos clave
-#### **Hoy aprenderás a:**
+### Hoy aprenderás a:
 
 - Crear elementos con document.createElement().
 
@@ -23,7 +23,7 @@
 ```
 
 #### 📜 JavaScript:
-```sh
+```js
 const btnCrear = document.getElementById('crearTarjeta');
 const contenedor = document.getElementById('contenedorTarjetas');
 
@@ -45,7 +45,7 @@ btnCrear.addEventListener('click', () => {
 
 #### 🎨 CSS 
 - opcional para ver mejor la tarjeta:
-```sh
+```css
 .tarjeta {
   background: #f0f0f0;
   border: 1px solid #ccc;
@@ -57,13 +57,13 @@ btnCrear.addEventListener('click', () => {
 
 ## Eliminar un elemento del DOM
 #### 📄 HTML:
-```sh
+```html
 <div id="mensaje">Este mensaje será eliminado</div>
 <button id="btnEliminar">Eliminar mensaje</button>
 ```
 
 #### 📜 JavaScript:
-```sh
+```js
 const mensaje = document.getElementById('mensaje');
 const btnEliminar = document.getElementById('btnEliminar');
 btnEliminar.addEventListener('click', () => {
@@ -72,10 +72,10 @@ btnEliminar.addEventListener('click', () => {
 ```
 
 # 🧩 Ejercicios prácticos
-- 1.- Crear una lista de tareas
+1. Crear una lista de tareas
 
 #### 📄 HTML:
-```sh
+```html
 <input type="text" id="tareaInput" placeholder="Escribe una tarea" />
 <button id="agregarTarea">Agregar Tarea</button>
 <ul id="listaTareas"></ul>
@@ -91,12 +91,12 @@ btnEliminar.addEventListener('click', () => {
 
 - Vaciar el input.
 
----------------------------------------------------
+---
 
-- 2.- Crear una tarjeta con botón para eliminarse a sí misma
+2. Crear una tarjeta con botón para eliminarse a sí misma
 
 #### 📄 HTML:
-```sh
+```html
 <button id="crearAutoTarjeta">Crear Tarjeta con botón</button>
 <div id="zonaTarjetas"></div>
 ```
