@@ -1,111 +1,110 @@
 # 📅 Día 5 – Crear y eliminar elementos del DOM
+## 🧠 Conceptos clave
+- * Hoy aprenderás a:
 
-## 🎯 Objetivo
-- Aprenderás a crear, insertar, reemplazar y eliminar nodos de manera dinámica usando JavaScript.
+- Crear elementos con document.createElement().
 
-* 📄 HTML base
+- Agregar texto con textContent.
+
+- Asignar clases con classList.add().
+
+- Insertar elementos en el DOM con appendChild() y append().
+
+- Eliminar elementos con remove() y removeChild().
+
+- Usar botones y eventos para realizar estas acciones.
+
+## 🧪 Ejemplos explicados
+### Crear un elemento y agregarlo al DOM
+- * 📄 HTML:
 ```sh
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Día 5 – Manipulación del DOM</title>
-</head>
-<body>
-  <h1>Galería Dinámica</h1>
-  <div id="galeria"></div>
-  <script src="script5.js"></script>
-</body>
-</html>
+<button id="crearTarjeta">Crear Tarjeta</button>
+<div id="contenedorTarjetas"></div>
 ```
 
-## 📜 Métodos y ejemplos
-
-- * `document.createElement(tagName)`
-- Crea un nuevo elemento HTML.
+- * 📜 JavaScript:
 ```sh
-const img = document.createElement('img');
+const btnCrear = document.getElementById('crearTarjeta');
+const contenedor = document.getElementById('contenedorTarjetas');
 
-img.src = 'foto1.jpg';
-img.alt = 'Descripción';
+btnCrear.addEventListener('click', () => {
+  const tarjeta = document.createElement('div');
+  tarjeta.classList.add('tarjeta');
+
+  const titulo = document.createElement('h2');
+  titulo.textContent = 'Título';
+
+  const descripcion = document.createElement('p');
+  descripcion.textContent = 'Descripción';
+
+  tarjeta.append(titulo, descripcion); // también puedes usar appendChild()
+
+  contenedor.appendChild(tarjeta);
+});
 ```
 
-- * `document.createTextNode(texto)`
-- Crea un nodo de texto independiente.
+- * 🎨 CSS opcional para ver mejor la tarjeta:
 ```sh
-const texto = document.createTextNode('¡Hola, mundo!');
-const p = document.createElement('p');
-p.appendChild(texto);
+.tarjeta {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
 ```
 
-- * `parent.appendChild(hijo)`
-- Inserta el nodo hijo al final de parent.
+### Eliminar un elemento del DOM
+- * 📄 HTML:
 ```sh
-const galeria = document.getElementById('galeria');
-galeria.appendChild(img);
+<div id="mensaje">Este mensaje será eliminado</div>
+<button id="btnEliminar">Eliminar mensaje</button>
 ```
 
-- * `parent.insertBefore(nuevo, referencia)`
-- Inserta nuevo justo antes de referencia.
+- * 📜 JavaScript:
 ```sh
-const primerImg = galeria.querySelector('img');
-const segundaImg = document.createElement('img');
-segundaImg.src = 'foto2.jpg';
-galeria.insertBefore(segundaImg, primerImg);
+const mensaje = document.getElementById('mensaje');
+const btnEliminar = document.getElementById('btnEliminar');
+btnEliminar.addEventListener('click', () => {
+  mensaje.remove(); // elimina directamente el elemento
+});
 ```
 
-- * `parent.replaceChild(nuevo, viejo)`
-- Reemplaza el nodo viejo por nuevo.
+# 🧩 Ejercicios prácticos
+- * 1.- Crear una lista de tareas
+
+- * 📄 HTML:
 ```sh
-const nuevaFoto = document.createElement('img');
-nuevaFoto.src = 'foto3.jpg';
-galeria.replaceChild(nuevaFoto, primerImg);
+<input type="text" id="tareaInput" placeholder="Escribe una tarea" />
+<button id="agregarTarea">Agregar Tarea</button>
+<ul id="listaTareas"></ul>
 ```
 
-- * `node.removeChild(hijo)`
-- Elimina hijo de su contenedor.
-`galeria.removeChild(segundaImg);`
+- * 📜 Objetivo:
 
-- * `node.remove()`
-- Elimina directamente el nodo del DOM.
-`nuevaFoto.remove();`
+- Al hacer clic en "Agregar Tarea":
 
-- * `node.cloneNode(deep)`
-- Clona un nodo. Si deep es true, copia también sus hijos.
+- Crear un <li> con el texto del input.
+
+- Insertarlo en #listaTareas.
+
+- Vaciar el input.
+
+- * 2.- Crear una tarjeta con botón para eliminarse a sí misma
+
+- * 📄 HTML:
 ```sh
-const clon = img.cloneNode(true);
-galeria.appendChild(clon);
+<button id="crearAutoTarjeta">Crear Tarjeta con botón</button>
+<div id="zonaTarjetas"></div>
 ```
 
-## 🛠️ Ejercicios
-- * Crear y agregar:
+- * 📜 Objetivo:
 
-- Crea un `<div>` con clase .tarjeta.
+- Al hacer clic en el botón:
 
-- Dentro de .tarjeta, crea un `<h2>` con texto “Título” y un `<p>` con texto “Descripción”.
+- Crear un div con clase .tarjeta.
 
-- Agrégalo al elemento `#galeria` con `appendChild`.
+- Agregarle un título, descripción y un botón que diga "Eliminar".
 
-- Insertar antes
-
-- Crea un nuevo `<p>` que diga “Inicio de galería”.
-
-- Insértalo antes del primer hijo de `#galeria` usando `insertBefore`.
-
-- Reemplazar
-
-- Toma la primera .tarjeta que creaste y reemplázala por otra tarjeta distinta (cambia título y descripción) usando `replaceChild`.
-
-- * Eliminar nodos
-
-- Borra la última tarjeta creada con `removeChild`.
-
-- Luego clona la tarjeta restante y pégala al final con `cloneNode(true)`.
-
-- Crear con TextNode
-
-- Crea un botón que, al hacer clic, añada un `<li>` a una lista nueva `<ul id="lista"></ul>`.
-
-- El `<li>` debe generarse con `createElement + createTextNode`.
+- Cuando se haga clic en "Eliminar", esa tarjeta desaparece.
 
