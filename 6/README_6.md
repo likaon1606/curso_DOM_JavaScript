@@ -21,7 +21,7 @@
 <div id="cajaColor" style="width: 200px; height: 200px; background: lightblue;"></div>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos el botón y el div al que se le cambiará el estilo
 const btnCambiarColor = document.getElementById('btnCambiarColor');
@@ -52,7 +52,7 @@ btnCambiarColor.addEventListener('click', () => {
 }
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos el botón y el div al que se le aplicarán clases
 const btnToggleClase = document.getElementById('btnToggleClase');
@@ -75,7 +75,7 @@ btnToggleClase.addEventListener('click', () => {
 <button id="cambiarImagen">Cambiar Imagen</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos el botón y la imagen
 const cambiarImagen = document.getElementById('cambiarImagen');
@@ -101,7 +101,7 @@ cambiarImagen.addEventListener('click', () => {
 <button id="btnMostrarOcultar">Ocultar / Mostrar</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos el párrafo y el botón
 const miParrafo = document.getElementById('miParrafo');
@@ -131,7 +131,7 @@ btnMostrarOcultar.addEventListener('click', () => {
 <button id="btnOcultarOpacity">Ocultar / Mostrar suavemente</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 const parrafoOcultar = document.getElementById('parrafoOcultar');
 const btnOcultarOpacity = document.getElementById('btnOcultarOpacity');
@@ -162,7 +162,7 @@ btnOcultarOpacity.addEventListener('click', () => {
 
 # 🧹 Ejercicios prácticos
 
-### 1. Crear un botón que oculte un elemento con visibility
+1. Crear un botón que oculte un elemento con `visibility`
 
 #### 📄 HTML:
 ```html
@@ -170,12 +170,12 @@ btnOcultarOpacity.addEventListener('click', () => {
 <button id="toggleVisibility">Mostrar / Ocultar (visibility)</button>
 ```
 
-📝 Objetivo:
-- Al hacer clic, aplicar visibility: hidden y luego volver a visible.
+## 📝 Objetivo:
+- Al hacer clic, aplicar `visibility: hidden` y luego volver a `visible`.
 
 ---
 
-### 2. Crear una lista donde los items cambien de color al hacer clic
+2. Crear una lista donde los items cambien de color al hacer clic
 
 #### 📄 HTML:
 ```html
@@ -193,5 +193,5 @@ btnOcultarOpacity.addEventListener('click', () => {
 }
 ```
 
-📝 Objetivo:
-- Al hacer clic en un <li>, usar classList.toggle('activo') para cambiar su color.
+## 📝 Objetivo:
+- Al hacer clic en un `<li>`, usar `classList.toggle('activo')` para cambiar su color.
