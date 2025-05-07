@@ -1,141 +1,137 @@
-📅 Día 7 – Navegar el DOM (Padres, Hijos, Hermanos)
-🧠 Conceptos clave
-Hoy aprenderás a:
+# 📅 Día 7 – Eventos del DOM y this
 
-Acceder al padre de un elemento con parentNode / parentElement.
+## 🧠 Conceptos clave
 
-Acceder a hijos con children, firstElementChild, lastElementChild.
+### Hoy aprenderás a:
 
-Acceder a hermanos con nextElementSibling y previousElementSibling.
+- Qué es un evento en JavaScript.
+- Usar addEventListener para escuchar eventos.
+- Diferencia entre onclick y addEventListener.
+- El valor de "this" en los manejadores de eventos.
+- Cómo usar funciones separadas para manejar eventos.
 
-🧪 Ejemplos explicados
-Acceder al padre de un elemento
-📄 HTML:
+---
 
-html
-Copiar
-Editar
-<div id="contenedor">
-  <p id="miParrafo">Soy un párrafo</p>
-</div>
-<button id="mostrarPadre">Mostrar padre</button>
-📜 JavaScript (comentado):
+# 🧪 Ejemplos explicados
 
-js
-Copiar
-Editar
-// Obtenemos el botón y el párrafo
-const btnPadre = document.getElementById('mostrarPadre');
-const miParrafo = document.getElementById('miParrafo');
+## Usar addEventListener en lugar de onclick
 
-// Al hacer clic, mostramos en consola el padre del párrafo
-btnPadre.addEventListener('click', () => {
-  // Usamos parentElement para acceder al contenedor padre
-  console.log(miParrafo.parentElement); // Devuelve el div con id="contenedor"
+#### 📄 HTML:
+```html
+<button id="btnSaludo">Saludar</button>
+```
+
+#### 📜 JavaScript (comentado):
+```js
+// Obtenemos el botón
+const btnSaludo = document.getElementById('btnSaludo');
+
+// Escuchamos el evento click con addEventListener
+btnSaludo.addEventListener('click', () => {
+  alert('¡Hola desde addEventListener!');
 });
-Acceder a los hijos de un elemento
-📄 HTML:
+```
 
-html
-Copiar
-Editar
-<div id="lista">
-  <p>Elemento 1</p>
-  <p>Elemento 2</p>
-  <p>Elemento 3</p>
-</div>
-<button id="mostrarHijos">Mostrar hijos</button>
-📜 JavaScript (comentado):
+---
 
-js
-Copiar
-Editar
-// Obtenemos el botón y el contenedor con los párrafos
-const btnHijos = document.getElementById('mostrarHijos');
-const lista = document.getElementById('lista');
+## Comparación: onclick vs addEventListener
 
-// Al hacer clic, mostramos los hijos del contenedor
-btnHijos.addEventListener('click', () => {
-  // Usamos children para obtener una colección de nodos hijos
-  const hijos = lista.children;
+#### 📄 HTML:
+```html
+<button id="btn1">Con onclick</button>
+<button id="btn2">Con addEventListener</button>
+```
 
-  // Mostramos cada hijo en consola
-  for (let i = 0; i < hijos.length; i++) {
-    console.log(hijos[i]);
-  }
+#### 📜 JavaScript (comentado):
+```js
+// onclick reemplaza cualquier función anterior
+btn1.onclick = () => {
+  alert('Esto viene de onclick');
+};
 
-  // También podríamos acceder directamente al primero y último
-  console.log('Primero:', lista.firstElementChild);
-  console.log('Último:', lista.lastElementChild);
+// addEventListener permite múltiples funciones
+btn2.addEventListener('click', () => {
+  alert('Primera función');
 });
-Acceder a hermanos de un elemento
-📄 HTML:
 
-html
-Copiar
-Editar
-<ul>
-  <li>Elemento A</li>
-  <li id="elementoCentral">Elemento B</li>
-  <li>Elemento C</li>
-</ul>
-<button id="mostrarHermanos">Mostrar hermanos</button>
-📜 JavaScript (comentado):
-
-js
-Copiar
-Editar
-// Obtenemos el botón y el elemento central
-const btnHermanos = document.getElementById('mostrarHermanos');
-const central = document.getElementById('elementoCentral');
-
-// Al hacer clic, accedemos a los hermanos anterior y siguiente
-btnHermanos.addEventListener('click', () => {
-  // previousElementSibling accede al anterior hermano
-  console.log('Anterior:', central.previousElementSibling);
-
-  // nextElementSibling accede al siguiente hermano
-  console.log('Siguiente:', central.nextElementSibling);
+btn2.addEventListener('click', () => {
+  alert('Segunda función');
 });
-🧩 Ejercicios prácticos
-Crear un botón que muestre el texto del primer hijo de una sección
+```
 
-📄 HTML:
+---
 
-html
-Copiar
-Editar
-<section id="seccion">
-  <h2>Título</h2>
-  <p>Primer párrafo</p>
-  <p>Segundo párrafo</p>
-</section>
-<button id="mostrarPrimerHijo">Mostrar primer hijo</button>
+## Usando "this" dentro del evento
+
+#### 📄 HTML:
+```html
+<button class="btnColor">Rojo</button>
+<button class="btnColor">Azul</button>
+<button class="btnColor">Verde</button>
+```
+
+#### 📜 JavaScript (comentado):
+```js
+// Obtenemos todos los botones con la clase "btnColor"
+const botones = document.querySelectorAll('.btnColor');
+
+// Recorremos y agregamos evento a cada uno
+botones.forEach(boton => {
+  boton.addEventListener('click', function () {
+    // "this" se refiere al botón que fue clickeado
+    this.style.backgroundColor = this.textContent.toLowerCase();
+  });
+});
+```
+
+---
+
+# 🧩 Ejercicios prácticos
+
+### 1. Crear un botón que cambie su propio texto al hacer clic
+
+#### 📄 HTML:
+```html
+<button id="cambiarTexto">Haz clic aquí</button>
+```
+
 📝 Objetivo:
+- Al hacer clic, cambiar el texto del botón a "¡Gracias!"
 
-Usar firstElementChild o children[0] para mostrar el primer hijo de la sección.
+---
 
-Crear una lista donde al hacer clic en un elemento, se marque su hermano siguiente
+### 2. Crear múltiples botones y mostrar cuál fue clickeado
 
-📄 HTML:
+#### 📄 HTML:
+```html
+<button class="botonNombre">Botón A</button>
+<button class="botonNombre">Botón B</button>
+<button class="botonNombre">Botón C</button>
+```
 
-html
-Copiar
-Editar
-<ul id="listaHermanos">
-  <li>Uno</li>
-  <li>Dos</li>
-  <li>Tres</li>
-</ul>
 📝 Objetivo:
+- Al hacer clic, mostrar una alerta con el texto del botón usando this.textContent
 
-Al hacer clic en un <li>, aplicar una clase al siguiente hermano con nextElementSibling.
+---
 
-🎨 CSS sugerido:
+### 3. Crear una función externa para reutilizar el manejador de eventos
 
-css
-Copiar
-Editar
-.marcado {
-  background-color: lightgreen;
+#### 📄 HTML:
+```html
+<button class="btn">1</button>
+<button class="btn">2</button>
+<button class="btn">3</button>
+```
+
+📝 Objetivo:
+- Crear una función llamada cambiarColor y pasarla como referencia al addEventListener.
+
+#### 📜 JavaScript sugerido:
+```js
+function cambiarColor(e) {
+  e.target.style.background = 'lightblue';
 }
+
+document.querySelectorAll('.btn').forEach(b => {
+  b.addEventListener('click', cambiarColor);
+});

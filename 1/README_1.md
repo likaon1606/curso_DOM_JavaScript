@@ -16,7 +16,7 @@
 
 ## 🧠 Métodos de selección de elementos
 
-```sh
+```js
 document.getElementById(id)
  Selecciona un único elemento por su ID.
 
@@ -35,7 +35,7 @@ document.getElementsByTagName(tagName)
 ## ✅ Ejemplo completo:
 
 * index.html:
-<!-- 
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,7 +52,8 @@ document.getElementsByTagName(tagName)
   </div>
   <script src="script.js"></script>
 </body>
-</html> -->
+</html>
+```
 
 * 🧠 ¿Qué devuelve cada uno?
 

@@ -13,7 +13,7 @@
 
 - `click` – cuando haces clic en un elemento
 
-```sh
+```js
 const btn = document.getElementById('miBoton');
 
 btn.addEventListener('click', () => {
@@ -22,7 +22,7 @@ alert('Hiciste clic');
 ```
 `mouseover / mouseout` – cuando pasas o quitas el mouse de un elemento
 
-```sh
+```js
 const caja = document.getElementById('miCaja');
 
 caja.addEventListener('mouseover', () => {
@@ -35,7 +35,7 @@ caja.style.backgroundColor = 'white';
 ```
 `input` – cuando se escribe o cambia algo en un input de texto
 
-```sh
+```js
 const nombreInput = document.getElementById('nombre');
 
 nombreInput.addEventListener('input', () => {
@@ -44,7 +44,7 @@ console.log('Valor actual:', nombreInput.value);
 ```
 `change` – cuando cambias el valor (ideal para selects o checkbox)
 
-```sh
+```js
 const selector = document.getElementById('miSelect');
 
 selector.addEventListener('change', () => {
@@ -53,7 +53,7 @@ console.log('Opción seleccionada:', selector.value);
 ```
 `submit` – cuando se envía un formulario
 
-```sh
+```js
 const form = document.getElementById('formulario');
 
 form.addEventListener('submit', (e) => {

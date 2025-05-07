@@ -19,14 +19,14 @@
 
 * HTML:
 
-```sh
+```html
 <p id="miParrafo">Texto original</p>
 <button id="btnEstilo">Cambiar estilo</button>
 ```
 
 * CSS:
 
-```sh
+```css
 .destacado {
   color: white;
   background-color: teal;
@@ -37,7 +37,7 @@
 
 * JS:
 
-```sh
+```js
 const parrafo = document.getElementById('miParrafo');
 const boton = document.getElementById('btnEstilo');
 

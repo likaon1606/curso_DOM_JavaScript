@@ -10,10 +10,11 @@ Aprenderás a modificar el contenido de los elementos (texto o HTML) y a leer o 
 
 Ejemplo:
 html:
-
-```sh
+```html
 <p id="parrafo1">Texto original</p>
+```
 
+```js
 js:
 const p = document.getElementById("parrafo1");
 p.textContent = "Nuevo texto sin <strong>HTML</strong>"; #Esto interpretará las etiquetas "strong" como texto
@@ -43,10 +44,11 @@ console.log(p.innerText); // muestra solo texto visible
 
 * Ejemplo:
 * html:
-
-```sh
+```html
 <img id="imagen" src="logo.png" alt="Logo">
+```
 
+```js
 js:
 const img = document.getElementById("imagen");
 
@@ -62,9 +64,11 @@ img.alt = "Nuevo logo";
 ## ✅ Mini-ejemplo completo:
 
 * index.html:
-
-```sh
+```html
 <p id="mensaje">Hola</p> <a id="enlace" href="https://google.com">Ir a Google</a>
+```
+
+```js
 script.js:
 const mensaje = document.getElementById("mensaje");
 mensaje.textContent = "¡Bienvenido!";

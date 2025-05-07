@@ -1,27 +1,28 @@
-📅 Día 6 – Modificar estilos y atributos con JavaScript
-🧠 Conceptos clave
-Hoy aprenderás a:
+# 📅 Día 6 – Modificar estilos y atributos con JavaScript
 
-Cambiar estilos con style.propiedad.
+## 🧠 Conceptos clave
 
-Modificar clases con classList (add, remove, toggle, contains).
+### Hoy aprenderás a:
 
-Cambiar atributos con setAttribute y getAttribute.
+- Cambiar estilos con `style.propiedad.`
+- Modificar clases con `classList (add, remove, toggle, contains)`.
+- Cambiar atributos con `setAttribute` y `getAttribute`.
+- Ocultar y mostrar elementos usando `display, visibility y opacity`.
 
-🧪 Ejemplos explicados
-Cambiar estilos directamente
-📄 HTML:
+---
 
-html
-Copiar
-Editar
+# 🧪 Ejemplos explicados
+
+## Cambiar estilos directamente
+
+#### 📄 HTML:
+```html
 <button id="btnCambiarColor">Cambiar color fondo</button>
 <div id="cajaColor" style="width: 200px; height: 200px; background: lightblue;"></div>
-📜 JavaScript (comentado):
+```
 
-js
-Copiar
-Editar
+#### 📜 JavaScript (comentado):
+```js
 // Obtenemos el botón y el div al que se le cambiará el estilo
 const btnCambiarColor = document.getElementById('btnCambiarColor');
 const cajaColor = document.getElementById('cajaColor');
@@ -31,28 +32,28 @@ btnCambiarColor.addEventListener('click', () => {
   // Cambiamos directamente el estilo usando la propiedad style.backgroundColor
   cajaColor.style.backgroundColor = 'salmon';
 });
-classList (add, remove, toggle, contains)
-📄 HTML:
+```
 
-html
-Copiar
-Editar
+---
+
+## classList (add, remove, toggle, contains)
+
+#### 📄 HTML:
+```html
 <button id="btnToggleClase">Toggle clase</button>
 <div id="miCaja" class="resaltado">Caja con clase</div>
-🎨 CSS opcional:
+```
 
-css
-Copiar
-Editar
+#### 🎨 CSS sugerido:
+```css
 .resaltado {
   border: 3px solid gold;
   background: lightyellow;
 }
-📜 JavaScript (comentado):
+```
 
-js
-Copiar
-Editar
+#### 📜 JavaScript (comentado):
+```js
 // Obtenemos el botón y el div al que se le aplicarán clases
 const btnToggleClase = document.getElementById('btnToggleClase');
 const miCaja = document.getElementById('miCaja');
@@ -62,19 +63,20 @@ btnToggleClase.addEventListener('click', () => {
   // Si la clase está presente se quita, si no está se agrega
   miCaja.classList.toggle('resaltado');
 });
-setAttribute y getAttribute
-📄 HTML:
+```
 
-html
-Copiar
-Editar
+---
+
+## setAttribute y getAttribute
+
+#### 📄 HTML:
+```html
 <img id="miImagen" src="https://via.placeholder.com/150" alt="Imagen">
 <button id="cambiarImagen">Cambiar Imagen</button>
-📜 JavaScript (comentado):
+```
 
-js
-Copiar
-Editar
+#### 📜 JavaScript (comentado):
+```js
 // Obtenemos el botón y la imagen
 const cambiarImagen = document.getElementById('cambiarImagen');
 const miImagen = document.getElementById('miImagen');
@@ -83,40 +85,113 @@ const miImagen = document.getElementById('miImagen');
 cambiarImagen.addEventListener('click', () => {
   // Usamos setAttribute para cambiar el atributo "src"
   miImagen.setAttribute('src', 'https://via.placeholder.com/200');
-  
+
   // También podríamos cambiar el atributo "alt"
   miImagen.setAttribute('alt', 'Nueva imagen');
 });
-🧩 Ejercicios prácticos
-Crear un botón que oculte y muestre un párrafo usando style.display
+```
 
-📄 HTML:
+---
 
-html
-Copiar
-Editar
+## Ocultar y mostrar elementos con style.display
+
+#### 📄 HTML:
+```html
 <p id="miParrafo">Este párrafo se puede ocultar</p>
 <button id="btnMostrarOcultar">Ocultar / Mostrar</button>
+```
+
+#### 📜 JavaScript (comentado):
+```js
+// Obtenemos el párrafo y el botón
+const miParrafo = document.getElementById('miParrafo');
+const btnMostrarOcultar = document.getElementById('btnMostrarOcultar');
+
+// Usamos una variable para saber si está visible
+let visible = true;
+
+btnMostrarOcultar.addEventListener('click', () => {
+  // Si está visible, lo ocultamos usando display
+  if (visible) {
+    miParrafo.style.display = 'none';
+  } else {
+    miParrafo.style.display = 'block';
+  }
+  visible = !visible;
+});
+```
+
+---
+
+## Ocultar y mostrar con visibility y opacity
+
+#### 📄 HTML:
+```html
+<p id="parrafoOcultar">Este texto se ocultará con opacity y visibility</p>
+<button id="btnOcultarOpacity">Ocultar / Mostrar suavemente</button>
+```
+
+#### 📜 JavaScript (comentado):
+```js
+const parrafoOcultar = document.getElementById('parrafoOcultar');
+const btnOcultarOpacity = document.getElementById('btnOcultarOpacity');
+
+let oculto = false;
+
+btnOcultarOpacity.addEventListener('click', () => {
+  if (!oculto) {
+    // Oculta visualmente pero el elemento sigue ocupando espacio
+    parrafoOcultar.style.opacity = '0';
+    parrafoOcultar.style.visibility = 'hidden';
+  } else {
+    parrafoOcultar.style.opacity = '1';
+    parrafoOcultar.style.visibility = 'visible';
+  }
+  oculto = !oculto;
+});
+```
+
+#### 🎨 CSS opcional para transición:
+```css
+#parrafoOcultar {
+  transition: opacity 0.3s ease;
+}
+```
+
+---
+
+# 🧹 Ejercicios prácticos
+
+### 1. Crear un botón que oculte un elemento con visibility
+
+#### 📄 HTML:
+```html
+<div id="cuadroOculto" style="width: 100px; height: 100px; background: coral;"></div>
+<button id="toggleVisibility">Mostrar / Ocultar (visibility)</button>
+```
+
 📝 Objetivo:
+- Al hacer clic, aplicar visibility: hidden y luego volver a visible.
 
-Usar style.display = 'none' para ocultar.
+---
 
-Volver a mostrar con style.display = 'block'.
+### 2. Crear una lista donde los items cambien de color al hacer clic
 
-Crear una lista de items que cambien de color al hacer clic
-
-📄 HTML:
-
-html
-Copiar
-Editar
+#### 📄 HTML:
+```html
 <ul>
   <li class="item">Elemento 1</li>
   <li class="item">Elemento 2</li>
   <li class="item">Elemento 3</li>
 </ul>
+```
+
+#### 🎨 CSS:
+```css
+.activo {
+  background-color: lightgreen;
+}
+```
+
 📝 Objetivo:
-
-Usar classList.toggle() para aplicar una clase al hacer clic.
-
-Crear una clase CSS para aplicar el color de fondo.
+- Al hacer clic en un <li>, usar classList.toggle('activo') para cambiar su color.
