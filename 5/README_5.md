@@ -15,32 +15,47 @@
 - Usar botones y eventos para realizar estas acciones.
 
 # 🧪 Ejemplos explicados
+
 ## Crear un elemento y agregarlo al DOM
+
 #### 📄 HTML:
-```sh
+```html
 <button id="crearTarjeta">Crear Tarjeta</button>
 <div id="contenedorTarjetas"></div>
 ```
 
 #### 📜 JavaScript:
 ```js
+// Obtenemos el botón para crear una tarjeta
 const btnCrear = document.getElementById('crearTarjeta');
+// Obtenemos el contenedor donde se insertarán las tarjetas
 const contenedor = document.getElementById('contenedorTarjetas');
 
+// Escuchamos el evento click sobre el botón
 btnCrear.addEventListener('click', () => {
+  // Creamos un nuevo elemento <div>
   const tarjeta = document.createElement('div');
+  // Le agregamos la clase "tarjeta"
   tarjeta.classList.add('tarjeta');
 
+  // Creamos un elemento <h2> para el título
   const titulo = document.createElement('h2');
+  // Le asignamos texto al título
   titulo.textContent = 'Título';
 
+  // Creamos un elemento <p> para la descripción
   const descripcion = document.createElement('p');
+  // Le asignamos texto a la descripción
   descripcion.textContent = 'Descripción';
 
-  tarjeta.append(titulo, descripcion); // también puedes usar appendChild()
+  // Insertamos el título y la descripción dentro de la tarjeta
+  // Usamos append() para añadir múltiples nodos a la vez
+  tarjeta.append(titulo, descripcion);
 
+  // Finalmente, insertamos la tarjeta dentro del contenedor en el DOM
   contenedor.appendChild(tarjeta);
 });
+
 ```
 
 #### 🎨 CSS 
@@ -56,6 +71,7 @@ btnCrear.addEventListener('click', () => {
 ```
 
 ## Eliminar un elemento del DOM
+
 #### 📄 HTML:
 ```html
 <div id="mensaje">Este mensaje será eliminado</div>
@@ -64,11 +80,17 @@ btnCrear.addEventListener('click', () => {
 
 #### 📜 JavaScript:
 ```js
+// Obtenemos el elemento con el mensaje a eliminar
 const mensaje = document.getElementById('mensaje');
+// Obtenemos el botón que eliminará el mensaje
 const btnEliminar = document.getElementById('btnEliminar');
+
+// Escuchamos el evento click en el botón
 btnEliminar.addEventListener('click', () => {
-  mensaje.remove(); // elimina directamente el elemento
+  // Eliminamos directamente el elemento del DOM con .remove()
+  mensaje.remove();
 });
+
 ```
 
 # 🧩 Ejercicios prácticos
@@ -85,7 +107,7 @@ btnEliminar.addEventListener('click', () => {
 
 - Al hacer clic en "Agregar Tarea":
 
-- Crear un <li> con el texto del input.
+- Crear un `<li>` con el texto del input.
 
 - Insertarlo en #listaTareas.
 

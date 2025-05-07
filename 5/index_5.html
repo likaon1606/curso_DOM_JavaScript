@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Día 5 – Crear y eliminar elementos del DOM</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style_5.css">
+    <title>Día 5 – Crear y eliminar elementos del DOM</title>
+  </head>
+  <body>
 
-  <button id="btn-add">agregar</button>
-  <script src="./script_5.js"></script>
-</body>
+  <!-- 1. Crear una lista de tareas  -->
+
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea" />
+    <button id="agregarTarea">Agregar Tarea</button>
+    <ul id="listaTareas"></ul>
+
+  <!-- 2. Crear una tarjeta con botón para eliminarse a sí misma -->
+
+    <button id="crearAutoTarjeta">Crear Tarjeta con botón</button>
+    <div id="zonaTarjetas"></div>
+
+
+    <script src="./script_5.js"></script>
+  </body>
 </html>
