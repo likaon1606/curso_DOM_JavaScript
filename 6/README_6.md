@@ -162,7 +162,7 @@ btnOcultarOpacity.addEventListener('click', () => {
 
 # 🧹 Ejercicios prácticos
 
-1. Crear un botón que oculte un elemento con `visibility`
+1. Crear un botón que oculte un elemento con visibility
 
 #### 📄 HTML:
 ```html
@@ -170,10 +170,8 @@ btnOcultarOpacity.addEventListener('click', () => {
 <button id="toggleVisibility">Mostrar / Ocultar (visibility)</button>
 ```
 
-## 📝 Objetivo:
-- Al hacer clic, aplicar `visibility: hidden` y luego volver a `visible`.
-
----
+### 📝 Objetivo:
+- Al hacer clic, aplicar visibility: hidden y luego volver a visible.
 
 2. Crear una lista donde los items cambien de color al hacer clic
 
@@ -193,5 +191,122 @@ btnOcultarOpacity.addEventListener('click', () => {
 }
 ```
 
-## 📝 Objetivo:
-- Al hacer clic en un `<li>`, usar `classList.toggle('activo')` para cambiar su color.
+### 📝 Objetivo:
+- Al hacer clic en un <li>, usar classList.toggle('activo') para cambiar su color.
+
+3. Crear un botón que cambie el fondo de un div utilizando `style.propiedad`
+
+#### 📄 HTML:
+```html
+<button id="btnCambiarFondo">Cambiar fondo a azul</button>
+<div id="cuadro" style="width: 150px; height: 150px; background: lightgray;"></div>
+```
+
+### 📝 Objetivo:
+- Al hacer clic en el botón, cambia el fondo del div a color azul usando style.backgroundColor.
+
+4. Crear un botón que añada una clase con classList.add
+
+#### 📄 HTML:
+```html
+<button id="btnAñadirClase">Añadir clase de resaltado</button>
+<div id="elementoResaltado">Elemento a resaltar</div>
+```
+
+#### 🎨 CSS:
+```css
+.resaltado {
+  border: 2px solid red;
+  font-weight: bold;
+}
+```
+
+### 📝 Objetivo:
+- Al hacer clic, añade la clase resaltado al div usando classList.add.
+
+5. Crear un botón que quite una clase con `classList.remove`
+
+#### 📄 HTML:
+```html
+<button id="btnQuitarClase">Quitar clase de resaltado</button>
+<div id="miElemento" class="resaltado">Elemento con clase resaltado</div>
+```
+
+#### 🎨 CSS:
+```css
+.resaltado {
+  background-color: yellow;
+}
+```
+
+### 📝 Objetivo:
+- Al hacer clic en el botón, quita la clase resaltado usando classList.remove.
+
+6. Verificar si un div tiene una clase usando classList.contains
+
+#### 📄 HTML:
+```html
+<button id="btnVerificarClase">Verificar clase</button>
+<div id="miCaja">Caja con clase</div>
+```
+
+### 📝 Objetivo:
+- Al hacer clic, verifica si el div tiene la clase resaltado usando classList.contains. Si la tiene, muestra un mensaje en la consola.
+
+7. Crear un botón que cambie el atributo src de una imagen con setAttribute
+
+📄 HTML:
+```html
+<img id="miImagen" src="https://via.placeholder.com/150" alt="Imagen original">
+<button id="btnCambiarAtributo">Cambiar Atributo src</button>
+```
+
+### 📝 Objetivo:
+- Al hacer clic, usa setAttribute para cambiar el atributo src de la imagen a una nueva URL.
+
+8. Obtener el atributo alt de una imagen con `getAttribute`
+
+#### 📄 HTML:
+```html
+<img id="miImagen" src="https://via.placeholder.com/150" alt="Imagen original">
+<button id="btnObtenerAtributo">Obtener atributo alt</button>
+```
+
+#### 📝 Objetivo:
+- Al hacer clic en el botón, usa getAttribute para obtener y mostrar en la consola el valor del atributo alt de la imagen.
+
+9. Crear un botón para ocultar y mostrar un `div` usando `style.display`
+
+#### 📄 HTML:
+```html
+<button id="btnMostrar">Mostrar</button>
+<button id="btnOcultar">Ocultar</button>
+<div id="contenido">Este es un contenido que se puede mostrar o ocultar.</div>
+```
+
+### 📝 Objetivo:
+- Al hacer clic en el botón "Mostrar", usa style.display para mostrar el div.
+
+- Al hacer clic en el botón "Ocultar", usa style.display para ocultarlo.
+
+10. Crear un botón para ocultar y mostrar un párrafo usando `visibility`
+
+#### 📄 HTML:
+```html
+<p id="parrafo">Este párrafo debe ocultarse con visibility</p>
+<button id="btnVisibility">Ocultar / Mostrar</button>
+```
+
+### 📝 Objetivo:
+- Al hacer clic, oculta o muestra el párrafo utilizando visibility: hidden y visibility: visible.
+
+11. Crear un botón para ocultar y mostrar un div con opacity
+
+📄 HTML:
+```html
+<button id="btnOcultar">Ocultar / Mostrar con Opacidad</button>
+<div id="bloque" style="width: 100px; height: 100px; background-color: orange;"></div>
+```
+
+### 📝 Objetivo:
+Al hacer clic, cambia la opacidad del div entre 0 y 1 utilizando style.opacity.
