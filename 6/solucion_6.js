@@ -42,7 +42,7 @@ items.forEach(item => {
 // });
 
 
-//**** */ Exercise 2
+//**** */ Exercise 3
 
 // Seleccionamos el boton
 const btn_btnCambiarFondo = document.getElementById('btnCambiarFondo');
