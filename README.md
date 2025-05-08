@@ -33,5 +33,7 @@
 
 5. Al finalizar el curso, puedes crear un proyecto propio donde apliques los conceptos aprendidos o mejorar los ejercicios realizados durante el curso.
 
+6. Algunas veces verás código tachado, es porque lo he comentado para resolver los **retos** y no interfiera en otras fuciones, únicamentes debes descomentarlo para poder probarlo.
+
 ---
 ### ¡Espero que este minicurso sea útil para tu aprendizaje y que disfrutes del proceso de manipulación del DOM! Si tienes alguna duda o pregunta, no dudes en dejar un comentario o abrir un issue en este repositorio.
