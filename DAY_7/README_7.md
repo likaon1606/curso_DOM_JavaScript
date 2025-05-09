@@ -21,7 +21,7 @@
 <button id="btnSaludo">Saludar</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos el botón
 const btnSaludo = document.getElementById('btnSaludo');
@@ -42,7 +42,7 @@ btnSaludo.addEventListener('click', () => {
 <button id="btn2">Con addEventListener</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // onclick reemplaza cualquier función anterior
 btn1.onclick = () => {
@@ -70,7 +70,7 @@ btn2.addEventListener('click', () => {
 <button class="btnColor">Verde</button>
 ```
 
-#### 📜 JavaScript (comentado):
+#### 📜 JavaScript
 ```js
 // Obtenemos todos los botones con la clase "btnColor"
 const botones = document.querySelectorAll('.btnColor');
