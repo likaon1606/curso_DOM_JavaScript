@@ -35,5 +35,7 @@
 
 6. Algunas veces verás código tachado, es porque lo he comentado para resolver los **retos** y no interfiera en otras fuciones, únicamentes debes descomentarlo para poder probarlo.
 
+* NOTA: No tocaré temas de **CSS**, por lo que tú podrás darle rienda suelta a tu creatividad.
+
 ---
-### 🚀¡Espero que este minicurso sea útil para tu aprendizaje y que disfrutes del proceso de manipulación del DOM! Si tienes alguna duda o pregunta, no dudes en dejar un comentario o abrir un issue en este repositorio.🚀
+## 🚀¡Espero que este minicurso sea útil para tu aprendizaje y que disfrutes del proceso de manipulación del DOM! Si tienes alguna duda o pregunta, no dudes en dejar un comentario o abrir un issue en este repositorio.🚀

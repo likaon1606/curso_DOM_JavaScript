@@ -7,3 +7,24 @@
 #cuadro {
   background-color: lightgray;
 }
+
+/* Exercise 4 */
+.resaltado {
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+/* Exercise 4 */
+.resaltado {
+  background-color: yellow;
+}
+
+/* Exercise 11 */
+.opacidad {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: opacity 0.3s ease; /* Animación de transición de opacidad */
+}
+
+

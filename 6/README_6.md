@@ -37,6 +37,32 @@ btnCambiarColor.addEventListener('click', () => {
 ---
 
 ## classList (add, remove, toggle, contains)
+- add: Agrega una o más clases al elemento.
+```js
+element.classList.add('resaltado');
+element.classList.add('rojo', 'negrita');
+```
+
+- remove: Elimina una o más clases del elemento.
+```js
+element.classList.remove('resaltado');
+element.classList.remove('rojo', 'negrita');
+```
+
+- toggle: Si el elemento tiene la clase, la elimina. Si no la tiene, la agrega.
+`element.classList.toggle('oculto');`
+**También puede usarse con un segundo parámetro booleano**
+```js
+element.classList.toggle('activo', true);  // Asegura que esté activada
+element.classList.toggle('activo', false); // Asegura que esté desactivada
+```
+
+- contains: Devuelve true si el elemento tiene esa clase, o false si no.
+```js
+if (element.classList.contains('resaltado')) {
+  console.log('La clase está presente');
+}
+```
 
 #### 📄 HTML:
 ```html
@@ -69,6 +95,10 @@ btnToggleClase.addEventListener('click', () => {
 
 ## setAttribute y getAttribute
 
+- setAttribute: Establece el valor de un atributo en el elemento indicado. Si el atributo ya existe, el valor es actualizado, en caso contrario, el nuevo atributo es añadido con el nombre y valor indicado.
+
+- getAttribute: devuelve el valor del atributo especificado en el elemento. Si el atributo especificado no existe, el valor retornado puede ser tanto null como "" (una cadena vacía)
+
 #### 📄 HTML:
 ```html
 <img id="miImagen" src="https://via.placeholder.com/150" alt="Imagen">
@@ -83,13 +113,21 @@ const miImagen = document.getElementById('miImagen');
 
 // Al hacer clic, cambiamos los atributos de la imagen
 cambiarImagen.addEventListener('click', () => {
-  // Usamos setAttribute para cambiar el atributo "src"
-  miImagen.setAttribute('src', 'https://via.placeholder.com/200');
+  // Obtenemos el valor actual del atributo "src"
+  const srcActual = miImagen.getAttribute('src');
+  // Lo mostramos por consola
+  console.log('SRC actual:', srcActual);
 
-  // También podríamos cambiar el atributo "alt"
+  // Obtenemos el valor actual del atributo "alt"
+  const altActual = miImagen.getAttribute('alt');
+  console.log('ALT actual:', altActual);
+
+  // Cambiamos los atributos con setAttribute
+  miImagen.setAttribute('src', 'https://via.placeholder.com/200');
   miImagen.setAttribute('alt', 'Nueva imagen');
 });
 ```
+
 
 ---
 
@@ -251,7 +289,7 @@ btnOcultarOpacity.addEventListener('click', () => {
 #### 📄 HTML:
 ```html
 <button id="btnVerificarClase">Verificar clase</button>
-<div id="miCaja">Caja con clase</div>
+<div id="miCaja" class="resaltado">Caja con clase</div>
 ```
 
 ## 📝 Objetivo:
