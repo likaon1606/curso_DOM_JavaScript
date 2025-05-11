@@ -17,9 +17,10 @@
 - Día 3 – Estilos, clases y estilos dinámicos
 - Día 4 – Eventos (click, mouseover, input, etc.)
 - Día 5 – Crear y eliminar elementos del DOM
-- Día 6 – Manipulación de formularios
-- Día 7 – Proyecto Mini DOM Lab: Interacciones completas
-- Día 8+ – Avanzado: Delegación de eventos, templates, fragmentos, animaciones, etc.
+- Día 6 – Modificar estilos y atributos con JavaScript
+- Día 7 – Eventos del DOM y this
+- Día 8 – Proyecto Mini DOM Lab: Interacciones completas
+- Día 9+ – Avanzado: Delegación de eventos, templates, fragmentos, animaciones, etc.
 
 # INSTRUCCIONES:
 
