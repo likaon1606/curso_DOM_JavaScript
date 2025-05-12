@@ -151,8 +151,8 @@ ul li {
 1. Mostrar una alerta con el nombre ingresado al hacer clic en "Saludar".
 2. Cambiar el título `<h1>` por un saludo personalizado con el nombre ingresado.
 3. Al hacer clic en un botón de color, cambiar el color de fondo de la página a ese color.
-4. Agregar un nuevo ítem a la lista con un texto personalizado (puedes preguntar con `prompt`).
-5. Hacer que los ítems de la lista puedan eliminarse al hacer doble clic.
+4. Agregar un nuevo ítem a la lista con un texto personalizado "nuevo item".
+5. Hacer que el item de la lista pueda eliminarse al hacer doble clic.
 6. Cambiar el texto del párrafo al hacer doble clic (y restaurarlo si se vuelve a hacer doble clic).
 7. Cambiar el color del `#cuadro` al entrar y salir del mouse (usa `mouseover` y `mouseout`).
 8. Mostrar por consola la tecla que se presiona y se suelta en el input.

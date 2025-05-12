@@ -20,7 +20,6 @@
 - Día 6 – Modificar estilos y atributos con JavaScript
 - Día 7 – Eventos del DOM y this
 - Día 8 – Proyecto Mini DOM Lab: Interacciones completas
-- Día 9+ – Avanzado: Delegación de eventos, templates, fragmentos, animaciones, etc.
 
 # INSTRUCCIONES:
 
